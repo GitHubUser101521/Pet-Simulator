@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Simulator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div id="gameDisplay">
+            <div id="leftDisplay">
+
+                <div id="petStats">
+                    <P class="highlight">HP: <span class="bold"  id="hpStat">100</span></P>
+                    <P class="highlight">ENERGY: <span class="bold"  id="energyStat">100</span></P>
+                    <P class="highlight" >GOLD: <span class="bold" id="goldStat">50</span></P>
+                    <P class="highlight">HAPPINESS: <span class="bold"  id="happStat">50</span></P>
+                    <P class="highlight">HUNGER: <span class="bold"   id="hungerStat">50</span></P>
+                </div>
+
+                <div id="petDisplay">
+                    <img src="Images/placeholder-person.png" id="pet">
+                </div>
+
+                <div id="activity">
+                    <button  onclick="rest();" style="width: 49%;" id="rest">REST</button>
+
+                    <button style="width: 49%;" id="checkUp" onclick="checkUp();">CHECK UP</button>
+
+                    <button style="width: 49%;" id="play"  onclick="play();">PLAY</button>
+
+                    <button style="width: 49%;" id="feed" onclick="feed();">FEED</button>
+
+                    <button style="width: 99%;" id="sleep" onclick="sleep();">SLEEP</button>
+                </div>
+
+                <div id="ageDisplay">
+                    <P>AGE: <span id="ageStat">1</span> day(s)</P>
+                </div>
+
+            </div>
+
+            <div id="rightDisplay">
+
+                <div id="textInfo">
+                    Pet is waiting for you...
+                </div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
