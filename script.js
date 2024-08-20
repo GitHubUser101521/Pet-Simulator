@@ -112,7 +112,7 @@ function gameOver () {
     } else if (energy < 5) {
         alert('PET DIED, you did not take good care of pet...')
         return true;
-    } else if (hunger < 10) {
+    } else if (hunger > 90) {
         alert('PET DIED, you did not take good care of pet...')
         return true;
     } else {
@@ -139,7 +139,7 @@ function sleep () {
     age += 1;
     health -= 2;
     energy -= 15;
-    hunger -= 20;
+    hunger += 20;
     happiness -= Math.floor((happiness / 2));
     if (gameOver()) {
         restart();
