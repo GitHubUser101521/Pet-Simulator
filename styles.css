@@ -56,8 +56,8 @@ button {
 }
 
 #petDisplay {
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 100px;
+    text-align-last: center;
 }
 #pet {
     width: 30px;
