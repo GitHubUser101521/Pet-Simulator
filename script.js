@@ -18,6 +18,7 @@ const goldStat = document.querySelector('#goldStat');
 const happStat = document.querySelector('#happStat');
 const hungerStat = document.querySelector('#hungerStat');
 const ageStat = document.querySelector('#ageStat');
+const petDisplay = document.querySelector('#petDisplay');
 
 function feed () {
     console.log('Feed button clicked');
@@ -106,10 +107,13 @@ function checkUp () {
 
 function gameOver () {
     if (health < 5) {
+        alert('PET DIED, you did not take good care of pet...')
         return true;
     } else if (energy < 5) {
+        alert('PET DIED, you did not take good care of pet...')
         return true;
     } else if (hunger < 10) {
+        alert('PET DIED, you did not take good care of pet...')
         return true;
     } else {
         return false;
@@ -172,13 +176,13 @@ function sleep () {
         issues.push('Time for a check up it seems... ');
     }
     if (energy < 40) {
-        issues.push('Pet is not that energetic now, lets get some rest');
+        issues.push('Pet is not that energetic now, lets get some rest. ');
     } 
     if (happiness < 20) {
-        issues.push('Lets play with pet');
+        issues.push('Lets play with pet. ');
     }
     if (hunger < 30) {
-        issues.push('Pet is hungry!');
+        issues.push('Pet is hungry! ');
     }
 
     textInfo.innerHTML = `${goldGain} ${issues}`
